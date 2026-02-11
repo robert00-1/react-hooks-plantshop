@@ -1,93 +1,36 @@
-# Phase 2 Code Challenge: Plantsy
+# Title
+Plansty
 
-## Demo
+# Description
 
-Use this gif as an example of how the app should work.
+A simple React application for managing a plant shop. Users can **view plants**, **add new plants**, **search plants by name**, and **mark plants as sold out**.
 
-![Demo GIF](./demo.gif)
+# Tools
+React
+React Hooks
+vites
+Fetch/API
+# Setup
+follow this steps to acccess and run plansty application
 
-## Instructions
+- clone repository into your local machine
+git clone https://github.com/robert00-1/react-hooks-plantshop.git
 
-Welcome to Plantsy! You've been tasked with building out some features for the
-admin side of a plant store. The designers have put together the components and
-CSS. Now it's up to you to bring the features to life by adding stateful logic
-as well as persisting data to the backend via our API.
+- navigate into folder
+cd react-hooks-plantshop
 
-Your job will be to make our app work according to the user stories you will
-find the [Deliverables](#Deliverables) section.
+- Install all dependancies
+npm install
+npm run dev
 
-## Setup
+-copy and paste the link into your browsers to access the plansty application.
 
-1. Run `npm install` in your terminal.
-2. Run `npm run server`. This will run your backend on port `6001`.
-3. In a new terminal, run `npm run dev`.
+# Screenshot
+![alt text](<Screenshot from 2026-02-11 07-28-10.png>)
 
-Make sure to open [http://localhost:6001/plants](http://localhost:6001/plants)
-in the browser to verify that your backend is working before you proceed!
 
-## Endpoints
+# licenses 
+this project is for learning purposes
 
-The base URL for your backend is: `http://localhost:6001`
-
-## Deliverables
-
-As a user:
-
-1. When the app starts, I can see all plants.
-2. I can add a new plant to the page by submitting the form.
-3. I can mark a plant as "sold out".
-4. I can search for plants by their name and see a filtered list of plants.
-
-### Endpoints for Core Deliverables
-
-#### GET /plants
-
-Example Response:
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Aloe",
-    "image": "./images/aloe.jpg",
-    "price": 15.99
-  },
-  {
-    "id": 2,
-    "name": "ZZ Plant",
-    "image": "./images/zz-plant.jpg",
-    "price": 25.98
-  }
-]
-```
-
-#### POST `/plants`
-
-Required Headers:
-
-```js
-{
-  "Content-Type": "application/json"
-}
-```
-
-Request Object:
-
-```json
-{
-  "name": "string",
-  "image": "string",
-  "price": number
-}
-```
-
-Example Response:
-
-```json
-{
-  "id": 1,
-  "name": "Aloe",
-  "image": "./images/aloe.jpg",
-  "price": 15.99
-}
-```
+# Author
+Robert Mmasi

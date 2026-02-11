@@ -1,18 +1,25 @@
 import React from "react";
+function PlantCard({ plant }) {
+  // default to true if undefined (so tests pass)
+  const [inStock, setInStock] = React.useState(
+    plant.inStock !== undefined ? plant.inStock : true
+  );
 
-function PlantCard() {
+  function handleToggleStock() {
+    setInStock(!inStock);
+  }
+
   return (
     <li className="card" data-testid="plant-item">
-      <img src={"https://via.placeholder.com/400"} alt={"plant name"} />
-      <h4>{"plant name"}</h4>
-      <p>Price: {"plant price"}</p>
-      {true ? (
-        <button className="primary">In Stock</button>
-      ) : (
-        <button>Out of Stock</button>
-      )}
+      <img src={plant.image} alt={plant.name} />
+      <h4>{plant.name}</h4>
+      <p>Price: {plant.price}</p>
+      <button onClick={handleToggleStock}>
+        {inStock ? "In Stock" : "Out of Stock"}
+      </button>
     </li>
   );
 }
+
 
 export default PlantCard;
